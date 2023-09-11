@@ -1,0 +1,21 @@
+plugins {
+    id "org.springframework.boot" version "2.7.14" apply false
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:2.7.14")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc:2.7.14")
+    implementation("com.h2database:h2:+")
+    implementation("p6spy:p6spy:+")
+    implementation("com.baomidou:mybatis-plus-boot-starter:3.4.2")
+}
+
+
+test {
+    useJUnitPlatform()
+}
